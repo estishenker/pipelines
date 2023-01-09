@@ -5,13 +5,13 @@ pipeline{
             steps('c'){ 
                 sh '''
                     case "${language}" in
-                    "c") pwd
+                    "c") sh C
                     ;;
-                    "java") sh ' echo "JAVA" '
+                    "java") sh JAVA
                     ;;
                     "python") sh ' echo "PYTHON" '
                     ;;
-                    "all") sh ' echo "all" '
+                    "all") echo "all" 
                     ;;
                     esac
                 '''
