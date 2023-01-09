@@ -2,20 +2,15 @@ pipeline{
     agent any
     stages{
         stage('1'){
-            steps('c'){
-                sh '''
+            steps('c'){               
                     case "$1" in
-                    "c") 
-                    echo 'C'
+                    "c") sh ' echo "C" '
                     ;;
-                    "java") 
-                    echo 'JAVA'
+                    "java") sh ' echo "JAVA" '
                     ;;
-                    "python") 
-                    echo 'PYTHON'
+                    "python") sh ' echo "PYTHON" '
                     ;;
-                    "all") 
-                    echo "all"
+                    "all") sh ' echo "all" '
                     ;;
                     esac
                 '''
