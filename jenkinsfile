@@ -4,6 +4,7 @@ pipeline{
         stage('1'){
             steps('c'){ 
                 sh '''
+                    pwd
                     case "${language}" in
                     "c") sh C
                     ;;
