@@ -5,8 +5,11 @@ pipeline{
             steps('c'){ 
                 sh '''
                     pwd
+                    ls -la
                     case "${language}" in
-                    "c") sh C
+                    "c") 
+                    sh C
+                    cat C
                     ;;
                     "java") sh JAVA
                     ;;
