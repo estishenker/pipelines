@@ -2,8 +2,8 @@ pipeline{
     agent any
     stages{
         stage('1'){
-            steps('c'){                   
-                case "$language" in
+            steps('c'){                
+                case "${language}" in
                 "c") sh ' echo "C" '
                 ;;
                 "java") sh ' echo "JAVA" '
