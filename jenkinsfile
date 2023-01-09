@@ -1,20 +1,12 @@
 pipeline{
     agent any
     stages{
-        stage('c'{
+        stage('1'){
             steps('c'){
-                if ("$language" == "c")
-                    sh 'C'
-                elif ("$language" == "JAVA")
-                    sh 'JAVA'
-                elif ("$language" == "PYTHON")
-                    sh 'PYTHON'
-                    else
-                        '''
+                sh '''
+                    if ("$language" == "c")
                         sh 'C'
-                        sh 'JAVA'
-                        sh 'PYTHON'
-                        '''
+                '''
             }
         }
     }
