@@ -4,12 +4,10 @@ pipeline{
         stage('1'){
             steps('c'){ 
                 sh '''
-                    pwd
-                    ls -la
-                    case "${language}" in
-                    "c") 
-                    sh C
                     cat C
+                    case "${language}" in
+                    "c") sh C
+                        cat C
                     ;;
                     "java") sh JAVA
                     ;;
