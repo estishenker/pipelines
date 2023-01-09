@@ -3,23 +3,29 @@ pipeline{
     stages{
         stage('1'){
             steps('c'){ 
-                sh '''
-                    cat C
-                    case "${language}" in
-                    "c") sh C
-                        cat C
-                    ;;
-                    "java") sh JAVA
-                    ;;
-                    "python") sh PYTHON
-                    ;;
-                    "all") sh C 
-                            sh JAVA
-                            sh PYTHON
-                    ;;
-                    esac
-                '''
+                #sh '''
+                 #   case "${language}" in
+                  #  "c") sh C                        
+                   # ;;
+                    #"java") sh JAVA
+                    #;;
+                    #"python") sh PYTHON
+                    #;;
+                    #"all") sh C 
+                     #       sh JAVA
+                      #      sh PYTHON
+                    #;;
+                    #esac
+                #'''
+                switch ($language){
+                    case "c":
+                        echo "C"
+                        break;
+                    case "java":
+                        echo "java"
+                }
             }
         }
     }
 }
+
