@@ -5,7 +5,7 @@ pipeline{
             steps('c'){ 
                 sh '''
                     case "${language}" in
-                    "c") echo "C" 
+                    "c") bash "C" 
                     ;;
                     "java") sh ' echo "JAVA" '
                     ;;
