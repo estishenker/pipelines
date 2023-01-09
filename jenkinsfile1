@@ -8,7 +8,8 @@ pipeline{
                   then
                   cat C                     
                 ''' 
-             steps('java'){ 
+            }
+            steps('java'){ 
                 sh '''
                   if [ "${language}" == "java" ] 
                   then
