@@ -9,9 +9,11 @@ pipeline{
                     ;;
                     "java") sh JAVA
                     ;;
-                    "python") sh ' echo "PYTHON" '
+                    "python") sh PYTHON
                     ;;
-                    "all") echo "all" 
+                    "all") sh C 
+                            sh JAVA
+                            sh PYTHON
                     ;;
                     esac
                 '''
