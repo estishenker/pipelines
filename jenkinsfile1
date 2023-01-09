@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage('1'){
+            steps('c'){ 
+                sh '''
+                  if [ "${language}" == "c" ] 
+                  then
+                  cat C                     
+                ''' 
+             steps('java'){ 
+                sh '''
+                  if [ "${language}" == "java" ] 
+                  then
+                  cat JAVA                     
+                ''' 
+            }
+        }
+    }
+}
