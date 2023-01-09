@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('1'){
             steps('c'){               
-                    case "$1" in
+                    case "$language" in
                     "c") sh ' echo "C" '
                     ;;
                     "java") sh ' echo "JAVA" '
