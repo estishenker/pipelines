@@ -5,15 +5,11 @@ pipeline{
             steps('c'){ 
                 sh '''
                     if [ "$language" = "c" ] ; then
-                        C 
-                        elif [ "$language" = "java" ] ; then
-                            JAVA
-                        elif [ "$language" = "python" ] ; then
-                            PYTHON
-                        else [ "$language" = "all" ] ; then
-                            C
-                            JAVA
-                            PYTHON
+                        C                         
+                    else 
+                        C
+                        JAVA
+                        PYTHON
                     fi
                   
                 '''    
