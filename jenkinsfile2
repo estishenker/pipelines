@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage(check language){
+            steps{
+                sh ' script "$language" '
+            }
+        }
+    }
+}
