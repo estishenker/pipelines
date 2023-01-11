@@ -6,14 +6,16 @@ pipeline{
                 sh '''
                     if [ $language == "c" ] ; then
                         C 
-                        elif [ $language == "java" ] ; then
-                           JAVA
-                        elif [ $language == "python" ] ; then
-                            PYTHON
+                    fi
+                    if [ $language == "java" ] ; then
+                        JAVA
+                    fi
+                    if [ $language == "python" ] ; then
+                        PYTHON
                     else
-                        sh C
-                        sh JAVA
-                        sh PYTHON
+                        C
+                        JAVA
+                        PYTHON
                     fi
                   
                 '''    
