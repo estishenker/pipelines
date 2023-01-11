@@ -6,13 +6,7 @@ pipeline{
                 sh '''
                     if [ "$language" = "c" ] ; then
                         pwd
-                        ls -la
-                    else 
-                        C
-                        JAVA
-                        PYTHON
-                    fi
-                  
+                        ls -la                  
                 '''    
             }
         }
