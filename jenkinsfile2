@@ -11,7 +11,7 @@ pipeline{
                 sh '''
                     chmod +x ./script
                     echo "$l1"
-                    ./script "$l1"
+                    ./script $l1
                 '''                              
             }
         }
