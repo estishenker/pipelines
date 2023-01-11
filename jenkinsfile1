@@ -5,7 +5,7 @@ pipeline{
             steps('c'){ 
                 sh '''
                     if [ "$language" = "c" ] ; then
-                        C                         
+                        ./C                         
                     else 
                         C
                         JAVA
