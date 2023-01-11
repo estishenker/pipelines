@@ -12,10 +12,6 @@ pipeline{
                     fi
                     if [ $language == "python" ] ; then
                         PYTHON
-                    else
-                        C
-                        JAVA
-                        PYTHON
                     fi
                   
                 '''    
