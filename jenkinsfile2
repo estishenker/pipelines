@@ -2,7 +2,8 @@
 pipeline{
     agent any
     environment{
-        l = env.language    
+        l=env.language
+        l1=$language
     }
     stages{
         stage('check language'){
