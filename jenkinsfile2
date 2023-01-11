@@ -4,7 +4,8 @@ pipeline{
     stages{
         stage('check language'){
             steps{ 
-                sh ' ./script "$language" '                
+                cat ./script
+                              
             }
         }
     }
