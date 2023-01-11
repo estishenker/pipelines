@@ -3,9 +3,11 @@ pipeline{
     agent any
     stages{
         stage('check language'){
-            steps{ 
-                sh ' cat ./script '
-                              
+            steps{
+                sh '''
+                    chmod +x ./script
+                    ./script $language
+                '''                              
             }
         }
     }
