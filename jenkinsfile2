@@ -1,10 +1,12 @@
 
 pipeline{
     agent any
+    environments{
+        l = env.language    
+    }
     stages{
         stage('check language'){
-            steps{
-                l = env.language
+            steps{                
                 echo env.l
                 sh '''
                     chmod +x ./script
