@@ -4,9 +4,9 @@ pipeline{
     stages{
         stage('check language'){
             steps{
+                echo env.language
                 sh '''
                     chmod +x ./script
-                    echo env.language
                     ./script "${language}"
                 '''                              
             }
