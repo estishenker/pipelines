@@ -1,14 +1,14 @@
 #!/bin/bash
-if [[ "$1" == "c" ]] 
-  then
-        bash C
-elif [[ "$1" == "java" ]] 
-  then
-        bash JAVA
-elif [[ "$1" == "python" ]] 
-  then
-        bash PYTHON
-else
-  bash C JAVA PYTHON
-fi
+case "$1" in
+"c") bash ./C
+;;
+"java") bash ./JAVA
+;;
+"python") bash ./PYTHON
+;;
+*) bash C
+   bash JAVA
+   bash PYTHON
+;;
+esac
 
