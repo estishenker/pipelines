@@ -4,8 +4,17 @@ pipeline{
         stage('1'){
             steps('c'){ 
                 sh '''
-                    cat C
-                    echo c
+                    if [ $language == "c" ] ; then
+                        C 
+                    elif [ $language == "java" ] ; then
+                        cat JAVA
+                    elif [ $language == "python" ] ; then
+                        sh PYTHON
+                    else
+                        sh C
+                        sh JAVA
+                        sh PYTHON
+                    fi
                   
                 '''    
             }
