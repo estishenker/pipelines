@@ -1,14 +1,14 @@
 #!/bin/bash
 case "$1" in
-"c") bash ./C
-;;
-"java") bash ./JAVA
-;;
-"python") bash ./PYTHON
-;;
-*) bash C
-   bash JAVA
-   bash PYTHON
-;;
+   "c") bash ./C
+   ;;
+   "java") bash ./JAVA
+   ;;
+   "python") bash ./PYTHON
+   ;;
+   *) bash C
+      bash JAVA
+      bash PYTHON
+   ;;
 esac
 
