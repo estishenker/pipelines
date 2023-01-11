@@ -4,10 +4,9 @@ pipeline{
         stage('1'){
             steps('c'){ 
                 sh '''
-                  if [ $language == "c" ] 
-                  then
-                  cat C  
-                  fi
+                    cat C
+                    echo c
+                  
                 '''    
             }
         }
