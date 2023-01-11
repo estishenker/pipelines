@@ -8,15 +8,7 @@ pipeline{
                   then
                   cat C  
                   fi
-                ''' 
-            }
-            steps('java'){ 
-                sh '''
-                  if [ "${language}" == "java" ] 
-                  then
-                  cat JAVA 
-                  fi
-                ''' 
+                '''    
             }
         }
     }
