@@ -4,16 +4,18 @@ pipeline{
         stage('1'){
             steps('c'){ 
                 sh '''
-                  if [ "${language}" == "c" ] 
+                  if [ $language == "c" ] 
                   then
-                  cat C                     
+                  cat C  
+                  fi
                 ''' 
             }
             steps('java'){ 
                 sh '''
                   if [ "${language}" == "java" ] 
                   then
-                  cat JAVA                     
+                  cat JAVA 
+                  fi
                 ''' 
             }
         }
