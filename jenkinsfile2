@@ -1,8 +1,7 @@
 
 pipeline{
     agent any
-    environment{
-        l="env.language"
+    environment{     
         l1="$language"
     }
     stages{
@@ -11,8 +10,8 @@ pipeline{
                 echo "$l1"
                 sh '''
                     chmod +x ./script
-                    echo env.l
-                    ./script env.l
+                    echo "$l1"
+                    ./script "$l1"
                 '''                              
             }
         }
