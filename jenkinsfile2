@@ -6,6 +6,7 @@ pipeline{
             steps{
                 sh '''
                     chmod +x ./script
+                    echo $language
                     ./script $language
                 '''                              
             }
