@@ -13,6 +13,7 @@ pipeline{
                     echo "$l1"
                     ./script $l1
                     docker build -t apache .
+                    docker images
                     docker run -dit --name mylanguage -p 8090:80 apache                   
                 '''                              
             }
