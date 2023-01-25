@@ -1,3 +1,2 @@
-// print with syntax of java
-System.out.println (" I love JAVA ");
-
+#!/bin/bash
+echo "I love JAVA" 
