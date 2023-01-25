@@ -1,2 +1,2 @@
-#!/bin/bash
-echo "I LOVE PYTHON"
+# syntax of python
+print (" I love PYTHON")
