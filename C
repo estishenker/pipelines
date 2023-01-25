@@ -1,2 +1,2 @@
-// print screen with syntax from c
-printf(" I love C ");
+#!/bin/bash
+echo "I love C" 
