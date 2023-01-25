@@ -1,2 +1,2 @@
 // print screen with syntax from c
-printf(" I love C");
+printf(" I love C ");
