@@ -12,6 +12,7 @@ pipeline{
                     chmod +x ./script
                     echo "$l1"
                     ./script $l1
+                    
                     # docker  run --name apaci_image -it --rm -p 8796:80 -v sh
                 '''                              
             }
