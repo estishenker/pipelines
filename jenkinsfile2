@@ -12,8 +12,8 @@ pipeline{
                     chmod +x ./script
                     echo "$l1"
                     ./script $l1
-                    
-                    # docker  run --name apaci_image -it --rm -p 8796:80 -v sh
+                    docker build -t apache
+                    docker run -dit --name my language -p 8090:80 apache                   
                 '''                              
             }
         }
