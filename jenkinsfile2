@@ -14,7 +14,7 @@ pipeline{
                     ./script $l1
                     docker build -t apache .
                     docker images
-                    docker run -dit --name mylanguage apache                   
+                    docker run -dit --name mylanguage -p 7575:80 apache                   
                 '''                              
             }
         }
