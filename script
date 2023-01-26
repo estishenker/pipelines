@@ -12,7 +12,7 @@ case "$1" in
       bash PYTHON >> output
    ;;
 esac
-output = bash ./output
+output = cat ./output
 # search = "language"
 sed -i "s/"language"/"$output"/" ./index.txt
 mv index.txt index.html
