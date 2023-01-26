@@ -13,9 +13,9 @@ case "$1" in
    ;;
 esac
 output = bash ./output
-search = "language"
-sed -i "s/"language"/"$output"/" ./index.html
-# mv index.txt index.html
+# search = "language"
+sed -i "s/"language"/"$output"/" ./index.txt
+mv index.txt index.html
 # export output = bash ./output
 # index.html contain $output then change 
 
