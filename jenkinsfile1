@@ -1,11 +1,11 @@
 pipeline {
-  agent any
-  stages {
-    stage () {
-      steps {
-        sh ls-la
-        sh pwd
-      }
+    agent any
+    stages {
+        stage() {
+            steps {
+                sh ls-la
+                sh pwd
+            }
+        }
     }
-  }
-}
+}      
