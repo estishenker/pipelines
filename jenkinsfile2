@@ -12,9 +12,9 @@ pipeline{
                     chmod +x ./script
                     echo "$l1"
                     ./script $l1
-                    docker build -t apache .
+                    docker build -t apache_test .
                     docker images
-                    docker run --rm -dit --name mylanguage -p 7575:80 apache                   
+                    docker run --rm -dit --name mylanguage -p 7575:80 apache_test                   
                 '''                              
             }
         }
