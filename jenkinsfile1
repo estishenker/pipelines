@@ -1,2 +1,11 @@
-ls-la
-pwd
+pipeline {
+  agent any
+  stages {
+    stage () {
+      steps {
+        sh ls-la
+        sh pwd
+      }
+    }
+  }
+}
