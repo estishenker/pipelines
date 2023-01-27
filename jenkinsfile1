@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('create index.html with choice') {
             steps {
-                echo $language
+                echo "${params.language}"
                 sh pwd
                 sh ls -la
             }
