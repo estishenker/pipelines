@@ -1,10 +1,14 @@
 pipeline {
     agent any
-
+    parameters{
+        choice(name:"language", choices:["all", "java", "python", "c"], description:"select language to display")
+    }
     stages {
-        stage('Hello') {
+        stage('create index.html with choice') {
             steps {
-                echo 'Hello World'
+                sh echo "$language"
+                sh pwd
+                sh ls -la
             }
         }
     }
