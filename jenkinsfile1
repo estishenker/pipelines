@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choice(name:"language", choices:["all", "java", "python", "c"], description:"select language to display")
+        choice(name: "language", choices: ["all", "java", "python", "c"], description: "select language to display")
     }
     stages {
         stage('create index.html with choice') {
